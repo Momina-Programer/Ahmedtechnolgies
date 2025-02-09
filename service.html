@@ -216,34 +216,40 @@
                         </div>
                         <p class="mb-4 pb-2">Get a free quote from Ahmed IT Technologies—your partner in web development, digital marketing, and IT solutions. Transform your ideas into reality with expert services tailored to your needs.</p>
                         <form action="https://formsubmit.co/ahmedtechnologies513@gmail.com" method="POST">
+                            <!-- Hidden Input to Disable Captcha (Optional) -->
+                            <!-- <input type="hidden" name="_captcha" value="false">
+                             -->
+                            <!-- Hidden Input for Thank You Page (Optional) -->
+                            <!-- <input type="hidden" name="_next" value="404.html"> -->
+                        
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" name="name" class="form-control border-0" placeholder="Your Name" required style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" name="email" class="form-control border-0" placeholder="Your Email" required style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" name="mobile" class="form-control border-0" placeholder="Your Mobile" required style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1"> Web Development</option>
-                                        <option value="2">Word Press Development</option>
-                                        <option value="3">Data Entry</option>
-                                        <option value="4">B2B Lead Generation</option>
-                                        <option value="5">Digital Marketing</option>
-                                        <option value="6">Content Writing</option>
+                                    <select name="service" class="form-select border-0" required style="height: 55px;">
+                                        <option value="" selected>Select A Service</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="WordPress Development">WordPress Development</option>
+                                        <option value="Data Entry">Data Entry</option>
+                                        <option value="B2B Lead Generation">B2B Lead Generation</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Content Writing">Content Writing</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <textarea name="message" class="form-control border-0" placeholder="Special Note" required></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
-                            </div>
+                            </div>
                         </form>
                     </div>
                 </div>
